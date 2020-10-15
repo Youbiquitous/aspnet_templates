@@ -1,0 +1,43 @@
+﻿@using $safeprojectname$.Resources
+@model $safeprojectname$.Models.MainViewModelBase 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <partial name="pv_x_metatags" />
+
+    <title>@Model.Title</title>
+
+    <!-- Core CSS refs -->
+    <link rel="stylesheet" href="~/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/minimo-theme.css" />
+    <link rel="stylesheet" href="~/css/minimo-sidebar.css" />
+    <link rel="stylesheet" href="~/css/minimo-custom.css" />
+    <link rel="stylesheet" href="~/css/lib/fa5pro.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+
+    <!-- More specific CSS refs -->
+    @await RenderSectionAsync("adhoc_css", required: false)
+
+    <!-- Core JS refs -->
+    <script src="~/js/lib/jquery.min.js"></script>
+    <script src="~/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lib/ybq/ybq-core.min.js"></script>
+    <script src="~/js/lib/ybq/ispiro-ybq-dialog.js"></script>
+    <script src="~/js/minimo-custom.js"></script>
+</head>
+
+<body>
+    <div class="col-12 p-3 bg-dark text-light">
+        <p>@Model.Settings.General.ApplicationName</p>
+    </div>
+
+<div class="container-fluid">
+    @RenderBody()
+</div>
+
+
+</body>
+
+</html>

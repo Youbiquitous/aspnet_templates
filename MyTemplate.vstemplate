@@ -1,0 +1,264 @@
+<VSTemplate Version="3.0.0" xmlns="http://schemas.microsoft.com/developer/vstemplate/2005" Type="Project">
+  <TemplateData>
+    <Name>Youbiquitous MINIMO</Name>
+    <Description>Minimalistic but realistic ASP.NET Core 3.1 app template</Description>
+    <ProjectType>CSharp</ProjectType>
+    <ProjectSubType>
+    </ProjectSubType>
+    <SortOrder>1000</SortOrder>
+    <CreateNewFolder>true</CreateNewFolder>
+    <DefaultName>Youbiquitous MINIMO</DefaultName>
+    <ProvideDefaultName>true</ProvideDefaultName>
+    <LocationField>Enabled</LocationField>
+    <EnableLocationBrowseButton>true</EnableLocationBrowseButton>
+    <CreateInPlace>true</CreateInPlace>
+    <Icon>__TemplateIcon.png</Icon>
+  </TemplateData>
+  <TemplateContent>
+    <Project TargetFileName="Ybq31.Minimo.Server.csproj" File="Ybq31.Minimo.Server.csproj" ReplaceParameters="true">
+      <Folder Name="Properties" TargetFolderName="Properties">
+        <ProjectItem ReplaceParameters="true" TargetFileName="launchSettings.json">launchSettings.json</ProjectItem>
+      </Folder>
+      <Folder Name="wwwroot" TargetFolderName="wwwroot">
+        <Folder Name="css" TargetFolderName="css">
+          <Folder Name="app" TargetFolderName="app">
+            <ProjectItem ReplaceParameters="true" TargetFileName="minimo-login.css">minimo-login.css</ProjectItem>
+          </Folder>
+          <Folder Name="lib" TargetFolderName="lib">
+            <ProjectItem ReplaceParameters="true" TargetFileName="all.min.css">all.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.min.css">bootstrap.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap4-select.min.css">bootstrap4-select.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap4-toggle.min.css">bootstrap4-toggle.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-datepicker.min.css">bootstrap-datepicker.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-select.min.css">bootstrap-select.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="dataTables.bootstrap4.min.css">dataTables.bootstrap4.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="fa5pro.min.css">fa5pro.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery-confirm.min.css">jquery-confirm.min.css</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="typeahead.min.css">typeahead.min.css</ProjectItem>
+          </Folder>
+          <Folder Name="webfonts" TargetFolderName="webfonts">
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-brands-400.eot">fa-brands-400.eot</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-brands-400.svg">fa-brands-400.svg</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-brands-400.ttf">fa-brands-400.ttf</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-brands-400.woff">fa-brands-400.woff</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-brands-400.woff2">fa-brands-400.woff2</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-duotone-900.eot">fa-duotone-900.eot</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-duotone-900.svg">fa-duotone-900.svg</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-duotone-900.ttf">fa-duotone-900.ttf</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-duotone-900.woff">fa-duotone-900.woff</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-duotone-900.woff2">fa-duotone-900.woff2</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-light-300.eot">fa-light-300.eot</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-light-300.svg">fa-light-300.svg</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-light-300.ttf">fa-light-300.ttf</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-light-300.woff">fa-light-300.woff</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-light-300.woff2">fa-light-300.woff2</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-regular-400.eot">fa-regular-400.eot</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-regular-400.svg">fa-regular-400.svg</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-regular-400.ttf">fa-regular-400.ttf</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-regular-400.woff">fa-regular-400.woff</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-regular-400.woff2">fa-regular-400.woff2</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-solid-900.eot">fa-solid-900.eot</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-solid-900.svg">fa-solid-900.svg</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-solid-900.ttf">fa-solid-900.ttf</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-solid-900.woff">fa-solid-900.woff</ProjectItem>
+            <ProjectItem ReplaceParameters="false" TargetFileName="fa-solid-900.woff2">fa-solid-900.woff2</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="minimo-custom.css">minimo-custom.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="minimo-landing.css">minimo-landing.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="minimo-sidebar.css">minimo-sidebar.css</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="minimo-theme.css">minimo-theme.css</ProjectItem>
+        </Folder>
+        <Folder Name="images" TargetFolderName="images">
+          <ProjectItem ReplaceParameters="false" TargetFileName="company-logo.png">company-logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover1-min.jpg">cover1-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover2-min.jpg">cover2-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover3-min.jpg">cover3-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover4-min.jpg">cover4-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover5-min.jpg">cover5-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover6-min.jpg">cover6-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="cover7-min.jpg">cover7-min.jpg</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ispiro-logo.png">ispiro-logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="minimo-logo.png">minimo-logo.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="minimo-logo2.png">minimo-logo2.png</ProjectItem>
+          <ProjectItem ReplaceParameters="false" TargetFileName="ybq-xs.png">ybq-xs.png</ProjectItem>
+        </Folder>
+        <Folder Name="js" TargetFolderName="js">
+          <Folder Name="app" TargetFolderName="app">
+            <ProjectItem ReplaceParameters="true" TargetFileName="minimo-login.js">minimo-login.js</ProjectItem>
+          </Folder>
+          <Folder Name="lib" TargetFolderName="lib">
+            <Folder Name="Ybq" TargetFolderName="Ybq">
+              <ProjectItem ReplaceParameters="true" TargetFileName="ispiro-ybq-dialog.js">ispiro-ybq-dialog.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-core.js">ybq-core.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-core.min.js">ybq-core.min.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-forms.js">ybq-forms.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-forms.min.js">ybq-forms.min.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-sticky.js">ybq-sticky.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-sticky.min.js">ybq-sticky.min.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-tables.js">ybq-tables.js</ProjectItem>
+              <ProjectItem ReplaceParameters="true" TargetFileName="ybq-tables.min.js">ybq-tables.min.js</ProjectItem>
+            </Folder>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap.bundle.min.js">bootstrap.bundle.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap4-select.min.js">bootstrap4-select.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap4-toggle.min.js">bootstrap4-toggle.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="bootstrap-datepicker.min.js">bootstrap-datepicker.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="chart.min.js">chart.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="dataTables.bootstrap4.min.js">dataTables.bootstrap4.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery.dataTables.min.js">jquery.dataTables.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery.min.js">jquery.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery.mobilePhoneNumber.js">jquery.mobilePhoneNumber.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery.mobilePhoneNumber.min.js">jquery.mobilePhoneNumber.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="jquery-confirm.min.js">jquery-confirm.min.js</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="typeahead.bundle.min.js">typeahead.bundle.min.js</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="minimo-custom.js">minimo-custom.js</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="false" TargetFileName="minimo-favicon.png">minimo-favicon.png</ProjectItem>
+      </Folder>
+      <Folder Name="Application" TargetFolderName="Application">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AccountService.cs">AccountService.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApplicationServiceBase.cs">ApplicationServiceBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeService.cs">HomeService.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Common" TargetFolderName="Common">
+        <Folder Name="Exceptions" TargetFolderName="Exceptions">
+          <ProjectItem ReplaceParameters="true" TargetFileName="MinimoException.cs">MinimoException.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Extensions" TargetFolderName="Extensions">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AuthExtensions.cs">AuthExtensions.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MinimoCookieAuthenticationEvent.cs">MinimoCookieAuthenticationEvent.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Razor" TargetFolderName="Razor">
+          <Folder Name="TagHelpers" TargetFolderName="TagHelpers">
+            <ProjectItem ReplaceParameters="true" TargetFileName="CardTagHelper.cs">CardTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DropdownListItem2TagHelper.cs">DropdownListItem2TagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DropdownListItemTagHelper.cs">DropdownListItemTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DropdownMarkupTagHelper.cs">DropdownMarkupTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="DropdownTagHelper.cs">DropdownTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="EmailTagHelper.cs">EmailTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModalContentItemTagHelper.cs">ModalContentItemTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModalContentTagHelper.cs">ModalContentTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModalContext.cs">ModalContext.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ModalTagHelper.cs">ModalTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="NotifyIconTagHelper.cs">NotifyIconTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="PanelContentTagHelper.cs">PanelContentTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="PanelContext.cs">PanelContext.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="PanelHeaderTagHelper.cs">PanelHeaderTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="PanelTagHelper.cs">PanelTagHelper.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="ToggleTagHelper.cs">ToggleTagHelper.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Settings" TargetFolderName="Settings">
+          <ProjectItem ReplaceParameters="true" TargetFileName="AppSettings.cs">AppSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CopyrightSettings.cs">CopyrightSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="GeneralSettings.cs">GeneralSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MinimoAppClaims.cs">MinimoAppClaims.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="RunSettings.cs">RunSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="SendGridSettings.cs">SendGridSettings.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="UserSecretSettings.cs">UserSecretSettings.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <Folder Name="Localization" TargetFolderName="Localization">
+            <ProjectItem ReplaceParameters="true" TargetFileName="DefaultCulture.cs">DefaultCulture.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="LocalizedDescription.cs">LocalizedDescription.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="ApiResponse.cs">ApiResponse.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="CommandResponse.cs">CommandResponse.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Controllers" TargetFolderName="Controllers">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AccountController.cs">AccountController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AdminController.cs">AdminController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ApiController.cs">ApiController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppController.cs">AppController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="DemoController.cs">DemoController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="HomeController.cs">HomeController.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MinimoController.cs">MinimoController.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Infrastructure" TargetFolderName="Infrastructure">
+        <Folder Name="Persistence" TargetFolderName="Persistence">
+          <Folder Name="Model" TargetFolderName="Model">
+            <ProjectItem ReplaceParameters="true" TargetFileName="Gender.cs">Gender.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Member.cs">Member.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MinimoEntity.cs">MinimoEntity.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="RecordTimeStamp.cs">RecordTimeStamp.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Role.cs">Role.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="Role.Names.cs">Role.Names.cs</ProjectItem>
+          </Folder>
+          <Folder Name="Repositories" TargetFolderName="Repositories">
+            <ProjectItem ReplaceParameters="true" TargetFileName="MemberRepository.cs">MemberRepository.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MemberRepository.Update.cs">MemberRepository.Update.cs</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="MinimoRepository.cs">MinimoRepository.cs</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="MinimoDatabase.cs">MinimoDatabase.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Services" TargetFolderName="Services">
+          <ProjectItem ReplaceParameters="true" TargetFileName="DefaultFileService.cs">DefaultFileService.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="IFileService.cs">IFileService.cs</ProjectItem>
+        </Folder>
+      </Folder>
+      <Folder Name="Models" TargetFolderName="Models">
+        <Folder Name="Account" TargetFolderName="Account">
+          <ProjectItem ReplaceParameters="true" TargetFileName="LoginInput.cs">LoginInput.cs</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="LoginViewModel.cs">LoginViewModel.cs</ProjectItem>
+        </Folder>
+        <Folder Name="Api" TargetFolderName="Api">
+          <Folder Name="RestCountries" TargetFolderName="RestCountries">
+            <ProjectItem ReplaceParameters="true" TargetFileName="RestCountries.cs">RestCountries.cs</ProjectItem>
+          </Folder>
+        </Folder>
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="HomeViewModel.cs">HomeViewModel.cs</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="ErrorViewModel.cs">ErrorViewModel.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="LandingViewModelBase.cs">LandingViewModelBase.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="MainViewModelBase.cs">MainViewModelBase.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Resources" TargetFolderName="Resources">
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppBiz.resx">AppBiz.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppBiz.Designer.cs">AppBiz.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppErrors.resx">AppErrors.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppErrors.Designer.cs">AppErrors.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMenu.resx">AppMenu.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMenu.Designer.cs">AppMenu.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMessages.resx">AppMessages.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppMessages.Designer.cs">AppMessages.Designer.cs</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppStrings.resx">AppStrings.resx</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="AppStrings.Designer.cs">AppStrings.Designer.cs</ProjectItem>
+      </Folder>
+      <Folder Name="Views" TargetFolderName="Views">
+        <Folder Name="Account" TargetFolderName="Account">
+          <ProjectItem ReplaceParameters="true" TargetFileName="login.cshtml">login.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Admin" TargetFolderName="Admin">
+          <ProjectItem ReplaceParameters="true" TargetFileName="index.cshtml">index.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Demo" TargetFolderName="Demo">
+          <ProjectItem ReplaceParameters="true" TargetFileName="info.cshtml">info.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Home" TargetFolderName="Home">
+          <ProjectItem ReplaceParameters="true" TargetFileName="index.cshtml">index.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="landing.cshtml">landing.cshtml</ProjectItem>
+        </Folder>
+        <Folder Name="Shared" TargetFolderName="Shared">
+          <Folder Name="Layouts" TargetFolderName="Layouts">
+            <ProjectItem ReplaceParameters="true" TargetFileName="_layout_Landing.cshtml">_layout_Landing.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_layout_Main.cshtml">_layout_Main.cshtml</ProjectItem>
+            <ProjectItem ReplaceParameters="true" TargetFileName="_layout_Simple.cshtml">_layout_Simple.cshtml</ProjectItem>
+          </Folder>
+          <ProjectItem ReplaceParameters="true" TargetFileName="error.cshtml">error.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="pv_UxDebug.cshtml">pv_UxDebug.cshtml</ProjectItem>
+          <ProjectItem ReplaceParameters="true" TargetFileName="pv_x_metatags.cshtml">pv_x_metatags.cshtml</ProjectItem>
+        </Folder>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewImports.cshtml">_ViewImports.cshtml</ProjectItem>
+        <ProjectItem ReplaceParameters="true" TargetFileName="_ViewStart.cshtml">_ViewStart.cshtml</ProjectItem>
+      </Folder>
+      <ProjectItem ReplaceParameters="true" TargetFileName="__ProjectHeader.txt">__ProjectHeader.txt</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="app-settings.json">app-settings.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="app-settings-dev.json">app-settings-dev.json</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Program.cs">Program.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="Startup.cs">Startup.cs</ProjectItem>
+      <ProjectItem ReplaceParameters="true" TargetFileName="ToDo.txt">ToDo.txt</ProjectItem>
+    </Project>
+  </TemplateContent>
+</VSTemplate>

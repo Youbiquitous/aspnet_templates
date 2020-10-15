@@ -1,0 +1,34 @@
+/*
+///////////////////////////////////////////////////////////////////
+//
+// MINIMO: app starter template ASP.NET CORE 3.1
+// Copyright (c) Youbiquitous srl 2020
+//
+// Author: Dino Esposito (http://youbiquitous.net)
+//
+*/
+
+
+/* Central repository of colors used throughout the template to define the theme */
+:root {
+    --app-normal-grey: #404040;
+    --app-light-grey: #e7e7e7;
+    --app-midlt-grey: #C0C0C0;
+    --app-middle-grey: #808080;
+    --app-dark-grey: #0A0A0A;
+    --app-dark-lt: rgba(10, 10, 10, .25);
+    --app-absolute-black: #000000;
+    --app-absolute-white: #FFFFFF;
+    --app-primary: #773DBD;
+    --app-primary-lt: rgba(119, 61, 189, .25);
+    --app-secondary: #ba55d3;
+    --app-secondary-lt: rgba(186, 85, 211, .25);
+    --app-success: #40a915;
+    --app-success-lt: rgba(64, 169, 21, .25);
+    --app-error: #c11818;
+    --app-error-lt: rgba(193, 24, 24, .25);
+    --app-info: #0094ff;
+    --app-info-lt: rgba(0, 148, 255, .25);
+    --app-warning: #ffaa00;
+    --app-warning-lt: rgba(255, 170, 0, .25);
+}

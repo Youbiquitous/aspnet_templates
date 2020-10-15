@@ -1,0 +1,41 @@
+///////////////////////////////////////////////////////////////////
+//
+// MINIMO: app starter template ASP.NET CORE 3.1
+// Copyright (c) Youbiquitous srl 2020
+//
+// Author: Dino Esposito (http://youbiquitous.net)
+//
+
+
+{
+  "Languages": [ "en-US", "it-IT" ],
+  "Run": {
+    "DevMode": true,
+    "EnableLogging": true
+  },
+  "General": {
+    "ProjectName": "Ybq",
+    "ApplicationName": "MINIMO",
+    "ApplicationDescription": "ASP.NET Core 3.1 Starter Template",
+    "Version": "v1.0.0",
+    "BuildInfo": "January 1, 2021",
+    "ContactEmail": "info@youbiquitous.net",
+    "Copyright": {
+      "Name": "Youbiquitous",
+      "Year": "2021"
+    },
+    "DefaultCulture": "en-US",
+    "ForcedDateAsDdMmYy": "12/07/20" // test purposes
+  },
+  "Secrets": {
+    //"IspiroConnectionString": "Data Source=(local); Integrated Security=True; Initial Catalog=ispiro_db;",
+    "SendgridConfiguration": {
+      "Username": "account-name",
+      "Password": "secret-name",
+      "SenderEmail": "no-reply@ispiro.net",
+      "SenderDisplayName": "MINIMO",
+      "DefaultCcEmails": [ "secondary@email.com" ],
+      "TestEmailWhenInDevMode": "devtester@email.com"
+    }
+  }
+}

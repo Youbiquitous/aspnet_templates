@@ -1,0 +1,213 @@
+﻿/*
+///////////////////////////////////////////////////////////////////
+//
+// ISPIRO: app starter template ASP.NET CORE 3.1
+// Copyright (c) Youbiquitous srl 2020
+//
+// Author: Dino Esposito (http://youbiquitous.net)
+//
+*/
+
+.text-grey {
+    color: var(--app-midlt-grey);
+}
+
+.tiny {
+    font-size: 8pt;
+    line-height: 5pt;
+}
+
+.opacity8 {
+    opacity: .8;
+}
+
+.opacity7 {
+    opacity: .65;
+}
+
+.opacity5 {
+    opacity: .5;
+}
+
+.opacity3 {
+    opacity: .3;
+}
+
+.horizontal-scroll {
+    width: 100%;
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.horizontal-scroll .hscroll-item:hover {
+    background-color: #dcdcdc;
+}
+
+.hscroll-item a {
+    text-decoration: none;
+    color: var(--gray-dark);
+}
+
+
+.borderless {
+    border: solid 0px;
+}
+
+.bordered {
+    border: solid 1px #111;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.normal {
+    font-weight: 400;
+}
+
+.text-lg {
+    font-size: 130%;
+}
+
+.text-md {
+    font-size: 110%;
+}
+
+.text-sm {
+    font-size: 90%;
+}
+
+.text-xs {
+    font-size: 75%;
+}
+
+.whiten {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.stickybar {
+    overflow: hidden;
+    background-color: #fff;
+}
+
+.sticky {
+    position: sticky;
+    top: 50px;
+}
+
+.truncatable {
+    white-space: nowrap !important;
+    text-overflow: ellipsis !important;
+    overflow: hidden !important;
+}
+/*
+.input-rounded {
+    border-radius: 5px !important;
+}
+
+.input-rounded-left {
+    border-top-left-radius: 5px !important;
+    border-bottom-left-radius: 5px !important;
+}
+
+.input-rounded-right {
+    border-top-right-radius: 5px !important;
+    border-bottom-right-radius: 5px !important;
+}
+*/
+input[type=text]:focus, input[type=email]:focus, input[type=password]:focus, input[type=number]:focus, textarea:focus {
+    background: beige;
+    color: var(--gray-dark);
+}
+
+input[type=text], input[type=date], input[type=number], input[type=password], input[type=email], textarea, select {
+    color: var(--gray-dark) !important;
+    border-color: var(--gray) !important;
+    font-weight: 400;
+}
+
+::-webkit-input-placeholder { /* Edge */
+    color: #555 !important;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: initial;
+}
+
+:-ms-input-placeholder { /* Internet Explorer */
+    color: #555 !important;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: initial;
+}
+
+::placeholder {
+    color: #555 !important;
+    font-weight: 400;
+    font-style: italic;
+    text-transform: initial;
+}
+
+/*.dropdown-menu {
+    border-radius: 0;
+    border: solid 2px #111;
+    margin-top: -2px;
+    min-width: 250px;
+}
+
+.dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
+    background-image: none;
+    background-color: var(--light);
+}
+
+.dropdown-menu-padded {
+    padding: 20px;
+}*/
+
+.tab-pane li a.active {
+    border-top-color: transparent !important;
+}
+
+.nav-tabs {
+    border-bottom: solid 1px #111;
+    font-size: 1.2em;
+}
+
+.nav-tabs li a.active {
+    border-radius: 0;
+    border: solid 1px #111 !important;
+    border-bottom-color: transparent !important;
+    font-weight: bold;
+}
+
+.ybq-inputfile img {
+    border: solid 1px #111;
+    cursor: pointer;
+}
+
+.ybq-inputfile img:hover {
+    opacity: .8;
+}
+
+.ybq-inputfile-toolbar {
+    margin-left: 10px;
+}
+
+.ybq-inputfile-placeholder {
+    border: dashed 2px #444;
+    padding: 20px;
+    font-size: 130%;
+    text-align: center;
+    cursor: pointer;
+}
+
+.ybq-inputfile-placeholder:hover {
+    opacity: .8;
+}
+
+
+

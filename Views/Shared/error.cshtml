@@ -1,0 +1,33 @@
+﻿@using $safeprojectname$.Common.Exceptions
+@using $safeprojectname$.Resources
+@model $safeprojectname$.Models.ErrorViewModel
+
+@{
+    Layout = "Layouts/_layout_Simple";
+    var errorObject = Model.Error ?? new MinimoException("Unknown error");
+}
+
+<div class="text-center">
+    <div class="display-4">@AppErrors.Err_Oops</div>
+    <div class="border-bottom mb-5">@AppErrors.Err_SomethingWentWrong</div>
+    <h3 class="text-danger">@errorObject.Message</h3>
+</div>
+
+@if (errorObject.RecoveryLinks.Any())
+{
+    <div class="mt-5 row p-2">
+        <div class="col-12 col-sm-10 offset-sm-1 col-lg-6 offset-lg-3">
+            <h3>@AppStrings.Label_WhereFromHere</h3>
+            <ul>
+                @foreach (var link in errorObject.RecoveryLinks)
+                {
+                    <li>
+                        <a href="@link.Url" target="@(link.Blank ? "_blank" : "")">@link.Text</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </div>
+}
+
+

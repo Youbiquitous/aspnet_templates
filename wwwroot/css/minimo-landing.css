@@ -1,0 +1,28 @@
+﻿/*
+///////////////////////////////////////////////////////////////////
+//
+// MINIMO: app starter template ASP.NET CORE 3.1
+// Copyright (c) Youbiquitous srl 2020
+//
+// Author: Dino Esposito (http://youbiquitous.net)
+//
+*/
+
+html, body {
+    background-image: url('/images/cover7-min.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.vcenter {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

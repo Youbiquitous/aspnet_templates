@@ -1,0 +1,54 @@
+﻿@model $safeprojectname$.Models.LandingViewModelBase
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <partial name="pv_x_metatags" />
+
+    <title>@Model.Title</title>
+
+    <!-- Core CSS refs -->
+    <link rel="stylesheet" href="~/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/minimo-theme.css" />
+    <link rel="stylesheet" href="~/css/minimo-custom.css" />
+    <link rel="stylesheet" href="~/css/minimo-landing.css" />
+    <link rel="stylesheet" href="~/css/lib/fa5pro.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+
+    <!-- More specific CSS refs -->
+    @await RenderSectionAsync("adhoc_css", required: false)
+
+    <!-- Core JS refs -->
+    <script src="~/js/lib/jquery.min.js"></script>
+    <script src="~/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lib/ybq/ybq-core.min.js"></script>
+    <script src="~/js/lib/ybq/ispiro-ybq-dialog.js"></script>
+    <script src="~/js/minimo-custom.js"></script>
+
+    <!-- More specific JS refs -->
+    <script src="~/js/lib/jquery-confirm.min.js"></script>
+    @await RenderSectionAsync("adhoc_scripts_top", required: false)
+</head>
+
+<body>
+<div class="container">
+    <div class="text-center text-white mb-5 opacity8">
+        <img src="~/images/minimo-logo.png" class="whiten mt-5" />
+        <h1 class="text-uppercase">
+            <span class="normal opacity7">@Model.Settings.General.ProjectName</span>
+            <span class="ml-1">@Model.Settings.General.ApplicationName</span>
+        </h1>
+        <h6 class="text-uppercase">@Model.Settings.General.ApplicationDescription</h6>
+        <hr class="border-white" />
+        <div class="tiny text-right opacity8">
+            <span class="bold">@Model.Settings.General.Version</span>
+            <span class="ml-2">@Model.Settings.General.BuildInfo</span>
+        </div>
+    </div>
+    <div>
+        @RenderBody()
+    </div>
+</div>
+</body>
+</html>

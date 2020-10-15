@@ -1,0 +1,98 @@
+﻿
+@using $safeprojectname$.Resources
+@model Ybq31.Ispiro.Server.Models.Account.LoginViewModel
+
+@{
+    Layout = "Layouts/_layout_Landing";
+}
+
+@section adhoc_css
+{
+    <link rel="stylesheet" href="~/css/app/minimo-login.css" />
+}
+
+<div class="login-container">
+    <div class="d-flex justify-content-center h-100">
+        <div class="card">
+            <div class="text-center text-light bold mb-3 p-3" style="border-bottom: solid 1px #ddd">
+                <h6 class="text-uppercase">@AppStrings.Label_Welcome</h6>
+            </div>
+
+            <form id="login-form" method="post" action="@Url.Action("login", "account")" autocomplete="off">
+                <input type="hidden" name="returnurl" value="@Model.FormData.ReturnUrl" />
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="px-2 mt-2">
+
+                                <!-- User -->
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-user"></i>
+                                        </span>
+                                    </div>
+                                    <input type="text" name="username" id="username"
+                                           class="form-control"
+                                           data-click-on-enter="#btnLogin"
+                                           autocomplete="none"
+                                           placeholder="@AppStrings.Placeholder_UserName">
+                                </div>
+
+                                <!-- Password -->
+                                <div class="input-group form-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="fas fa-key"></i>
+                                        </span>
+                                    </div>
+                                    <input type="password" name="password" id="password"
+                                           class="form-control"
+                                           data-cleartext="off"
+                                           data-click-on-enter="#btnLogin"
+                                           placeholder="@AppStrings.Placeholder_Password">
+                                </div>
+                                <div class="row align-items-center remember">
+                                    <label>
+                                        <input asp-for="FormData.RememberMe" name="rememberme" type="checkbox"/>@AppMenu.RememberMe
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-7 mt-2 text-right">
+                            <div id="message" class="small px-2 text-warning"></div>
+                        </div>
+                        <div class="form-group col-5 text-right">
+                            <button type="button" id="btnLogin" class="btn mx-2 login_btn">
+                                @AppMenu.SignIn
+                                <i class="fas fa-chevron-right ml-2"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </form>
+
+            <div class="small mt-2 border-top">
+                <div class="d-flex justify-content-center py-2">
+                        <a href="@Url.Action("recover", "account")">@AppMenu.ForgotPassword?</a>
+                    </div>
+                <div class="d-flex justify-content-center mt-3 whiten">
+                    <img src="/images/company-logo.png" style="width: 100px"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- PAGE SPECIFIC SCRIPTS -->
+<script>
+    var Err_IncompleteCredentials = "@AppErrors.Err_IncompleteCredentials";
+    var Info_Connecting = "@AppMessages.Info_Connecting";
+    var System_SomethingWentWrong = "@AppErrors.Err_SomethingWentWrong";
+    var System_ConnectionError = "@AppErrors.Err_ConnectionError";
+</script>
+<script src="~/js/app/ispiro-login.js" asp-append-version="true"></script>
+<script src="~/js/lib/Ybq/ybq-forms.min.js"></script>

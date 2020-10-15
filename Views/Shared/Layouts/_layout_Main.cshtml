@@ -1,0 +1,139 @@
+﻿@using $safeprojectname$.Resources
+@model $safeprojectname$.Models.MainViewModelBase 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <partial name="pv_x_metatags" />
+
+    <title>@Model.Title</title>
+
+    <!-- Core CSS refs -->
+    <link rel="stylesheet" href="~/css/lib/bootstrap.min.css">
+    <link rel="stylesheet" href="~/css/minimo-theme.css" />
+    <link rel="stylesheet" href="~/css/minimo-sidebar.css" />
+    <link rel="stylesheet" href="~/css/minimo-custom.css" />
+    <link rel="stylesheet" href="~/css/lib/fa5pro.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i">
+
+    <!-- More specific CSS refs -->
+    @await RenderSectionAsync("adhoc_css", required: false)
+
+    <!-- Core JS refs -->
+    <script src="~/js/lib/jquery.min.js"></script>
+    <script src="~/js/lib/bootstrap.bundle.min.js"></script>
+    <script src="~/js/lib/ybq/ybq-core.min.js"></script>
+    <script src="~/js/lib/ybq/ispiro-ybq-dialog.js"></script>
+    <script src="~/js/minimo-custom.js"></script>
+</head>
+
+<body>
+
+<div class="d-flex" id="wrapper">
+
+    <!-- Sidebar -->
+    <div class="bg-light border-right" id="sidebar-wrapper">
+        <div class="sidebar-heading mb-5">
+            <b>@Model.Settings.General.ApplicationName</b><sup class="tiny">TEMPLATE</sup>
+        </div>
+        <div class="list-group list-group-flush">
+            @foreach (var sbi in Model.SidebarMenu)
+            {
+                if (sbi.IsDivider)
+                {
+                    <a class="dropdown-divider border-dark"></a>
+                }
+                else
+                {
+                    <a href="@sbi.Url"
+                       target="@sbi.Target"
+                       class="list-group-item list-group-item-action bg-light borderless">
+                        <i class="@sbi.Icon mr-2"></i>
+                        @sbi.Text
+                    </a>
+                }
+            }
+
+            <div class="mt-5">
+                @await RenderSectionAsync("additional_menuitems", required: false)
+            </div>
+                </div>
+    </div>
+
+    <div id="page-content-wrapper">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+            <button class="btn btn-primary" id="menu-toggle">
+                <i id="sidebar-toggler" class="fas fa-chevron-left"></i>
+            </button>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="@Url.Action("info", "demo")">@AppMenu.Info</a>
+                    </li>
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>*@
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                            <span id="username">
+                                @if (User.Identity.IsAuthenticated)
+                                {
+                                    <span>@User.Identity.Name</span>
+                                }
+                                else
+                                {
+                                    <span>Connect</span>
+                                }
+                            </span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right">
+                            @if (User.Identity.IsAuthenticated)
+                            {
+                                <a class="dropdown-item" href="#">Sample action</a>
+                                <a class="dropdown-item" href="#">Another action</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="/logout">@AppMenu.SignOut</a>
+                            }
+                            else
+                            {
+                                <a class="dropdown-item" href="/account/login">@AppMenu.SignIn</a>
+                            }
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container-fluid">
+            @RenderBody()
+        </div>
+    </div>
+</div>
+
+<div class="col-12 p-3 bg-dark text-grey small text-center">
+    <p>@Model.Settings.General.Copyright</p>
+</div>
+
+<!-- Menu Toggle Script -->
+<script>
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#wrapper").toggleClass("toggled");
+        if($("#wrapper").hasClass("toggled")) {
+            $("#sidebar-toggler").removeClass("fa-chevron-left").addClass("fa-chevron-right");
+        } else {
+            $("#sidebar-toggler").removeClass("fa-chevron-right").addClass("fa-chevron-left");
+        }
+    });
+</script>
+
+</body>
+
+</html>
